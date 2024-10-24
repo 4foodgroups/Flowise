@@ -1,0 +1,20 @@
+meta {
+  name: Send second message
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/v1/prediction/061049e8-4573-4687-b400-708a5fab8b32
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "question": "Give me all details about sandwhich",
+    "overrideConfig": {
+      "sessionId": "af03b79f-52e2-4184-9641-23b57ef2b96c"
+    }
+  }
+}

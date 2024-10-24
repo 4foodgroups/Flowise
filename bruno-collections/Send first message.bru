@@ -1,0 +1,17 @@
+meta {
+  name: Send first message
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/v1/prediction/061049e8-4573-4687-b400-708a5fab8b32
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "question": "Hey, I want something vegeterian, what you have to offer?"
+  }
+}
